@@ -1,6 +1,6 @@
 namespace StudentManagement.Models;
 
-public class Course
+public class Enrollment
 {
-    
+
 }
