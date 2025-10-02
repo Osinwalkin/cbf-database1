@@ -6,6 +6,10 @@
 # dotenv files
 .env
 
+#Ignore SQlite database files
+*.db
+*.db-journal
+
 # User-specific files
 *.rsuser
 *.suo
