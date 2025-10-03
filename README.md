@@ -32,7 +32,7 @@ Denne tilgang fokuserer på at skabe en række små, trinvise og versionerede mi
 
 ### 2. State-Based tilgang (Manuel SQL)
 
-**Artifacts:** Ligger i root folder lige nu, men skulle ligge i Student-Management folderen
+**Artifacts:** Ligger i projektfolderen
 
 Denne tilgang fokuserer på at vedligeholde et enkelt master SQL-script som altid vil repræsenterer den endelige tilstand af hele databaseskemaet. I stedet for at man sporer ændringerne har vi versioneringer af masterplanen. Det tager meget længere tid ved at bruge denne tilgang, når man vil lave små incrementelle ændringer...
 
