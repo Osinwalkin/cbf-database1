@@ -34,7 +34,7 @@ Denne tilgang fokuserer på at skabe en række små, trinvise og versionerede mi
 
 **Artifacts:** Ligger i projektfolderen
 
-Denne tilgang fokuserer på at vedligeholde et enkelt master SQL-script som altid vil repræsenterer den endelige tilstand af hele databaseskemaet. I stedet for at man sporer ændringerne har vi versioneringer af masterplanen. Det tager meget længere tid ved at bruge denne tilgang, når man vil lave små incrementelle ændringer...
+Denne tilgang fokuserer på at vedligeholde et enkelt master SQL-script som altid vil repræsenterer den endelige tilstand af hele databaseskemaet. I stedet for at man sporer ændringerne har vi versioneringer af masterplanen. Det tager meget længere tid ved at bruge denne tilgang, når man vil lave små incrementelle ændringer... Men med state-basen kan man self. også bare lave mange ændringer på en gang istedet for at gøre det incrementelt.
 
 **Workflow:**
 1.  oprettede en ny featurebranch fra `state-based-manual`.
