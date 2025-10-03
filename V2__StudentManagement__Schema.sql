@@ -1,0 +1,25 @@
+-- V1 Initial Schema for Student Management System
+
+CREATE TABLE Students (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    FirstName TEXT NOT NULL,
+    MiddleName TEXT NULL,
+    LastName TEXT NOT NULL,
+    Email TEXT NOT NULL UNIQUE,
+    EnrollmentDate TEXT NOT NULL
+);
+
+CREATE TABLE Courses (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Title TEXT NOT NULL,
+    Credits INTEGER NOT NULL
+);
+
+CREATE TABLE Enrollments (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    StudentId INTEGER NOT NULL,
+    CourseId INTEGER NOT NULL,
+    Grade INTEGER,
+    FOREIGN KEY (StudentId) REFERENCES Students(Id),
+    FOREIGN KEY (CourseId) REFERENCES Courses(Id)
+);
